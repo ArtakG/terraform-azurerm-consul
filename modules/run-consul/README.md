@@ -61,6 +61,8 @@ The `run-consul` script accepts the following arguments:
 * `user` (optional): The user to run Consul as. Default is to use the owner of `config-dir`.
 * `skip-consul-config` (optional): If this flag is set, don't generate a Consul configuration file. This is useful if 
   you have a custom configuration file and don't want to use any of of the default settings from `run-consul`. 
+* `promote-vault-service-to-dns` (optional): If this flag is set, vault service is registered in consul config. This is useful if 
+  you need to have Consul DNS forwarding requests to Vault service to this machine. 
 
 Example:
 
