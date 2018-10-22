@@ -116,7 +116,11 @@ function get_other_scale_set_member_ip {
 
     for ip in ${ip_list[@]}; do
         if [[ "$my_ip_address" != "$ip" ]]; then
-            other_ip="$ip"
+            if [[ "$other_ip" ]]; then
+                other_ip="$other_ip", "$ip" -join ", "
+            else
+                other_ip="$ip"
+            fi
         fi
     done
 
