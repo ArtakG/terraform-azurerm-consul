@@ -230,6 +230,9 @@ EOF
   "server": $server,
   "ui": true,
   "raft_protocol": $raft_protocol
+  "telemetry": {
+    "dogstatsd_addr": "127.0.0.1:8125"
+  }
 }
 EOF
   chown "$user:$user" "$config_path"
