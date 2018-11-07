@@ -225,7 +225,7 @@ EOF
   $bootstrap_expect
   "client_addr": "0.0.0.0",
   "datacenter": "$instance_location",
-  "node_name": "$instance_id",
+  "node_id": "$instance_id",
   $retry_join_json
   "server": $server,
   "ui": true,
